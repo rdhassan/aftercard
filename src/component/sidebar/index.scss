@@ -1,0 +1,9 @@
+@import "../../App.scss";
+
+.sidebar {
+  background-color: theme-color("primary");
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
