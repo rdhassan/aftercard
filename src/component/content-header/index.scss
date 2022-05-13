@@ -1,0 +1,40 @@
+@import "../../App.scss";
+
+.content-header {
+  .content-heading {
+    h3 {
+      font-size: 15px;
+    }
+    h2 {
+      letter-spacing: -1px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .content-notification {
+    .form-control {
+      background: url('../../assets/search.svg') no-repeat;
+      background-size: 20px;
+      background-position: 95%;
+      padding-right: 40px;
+      padding-left: 20px;
+      background-color: #FCF8E4;
+      border-radius: 5px;
+      opacity: 0.58;
+      height: 40px;
+      border: 0;
+      color: #000;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .dropdown-toggle {
+      img {
+        min-width: 20px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -6,4 +6,67 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
+  .menu {
+    margin-top: 30px;
+    align-items: center;
+    .support {
+      background-color: #ffffffbd;
+      box-shadow: 3px 3px 10px #E2C750B2;
+      min-width: 236px;
+      min-height: 226px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .sup-link {
+        background: #FFFFFF;
+        border-radius: 5px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        justify-content: center;
+        max-width: 130px;
+        padding-left: 0;
+      }
+    }
+    a {
+      background-color: transparent;
+      border: 0;
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      margin: 6px 0;
+      padding: 8px 0;
+      width: 100%;
+      padding-left: 50px;
+      border-radius: 5px;
+      transition: .2s linear;
+      &.active,
+      &:hover {
+        box-shadow: 3px 3px 5px #E2C750B3;
+        background-color: #fff;
+        color: #000;
+      }
+      img {
+        margin-right: 10px;
+        width: 16px;
+        object-fit: contain;
+      }
+    }
+  }
+  .bottom {
+    .menu {
+      a {
+        text-align: center;
+        justify-content: center;
+        padding-left: 0;
+      }
+    }
+  }
 }
