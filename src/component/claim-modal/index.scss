@@ -1,0 +1,53 @@
+.aftercard-modal.claim {
+  .modal-lg {
+    max-width: 650px;
+  }
+  .modal-md {
+    max-width: 480px;
+  }
+  .modal-dialog {
+    .modal-content {
+      padding: 30px 50px !important;
+      box-shadow: 10px 10px 30px #0000000F;
+      border-radius: 5px;
+      border: 0;
+      @media only screen and (max-width : 600px) {
+        padding: 10px 20px !important;
+      }
+      .btn-close {
+        font-size: 10px;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+      }
+      .modal-title {
+        font-size: 20px;
+        font-weight: 700;
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #F4E294;
+      }
+      label {
+        color: #575757;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .form-control {
+        border-radius: 5px;
+        font-size: 14px;
+        min-height: 50px;
+        border-color: transparent;
+        transition: .2s linear;
+        border-color: transparent !important;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-color: #F4E294 !important;
+          background-color: white !important;
+        }
+      }
+    }
+  }
+
+}

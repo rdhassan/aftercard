@@ -21,7 +21,7 @@ const SideBar = () => {
           <ListGroup.Item action href="#link2">
             <img src={list} alt="no-logo" /> Shipments
           </ListGroup.Item>
-          <ListGroup.Item action href="#link2">
+          <ListGroup.Item action href="#link3">
             <img src={setting} alt="no-logo" /> Settings
           </ListGroup.Item>
         </ListGroup>

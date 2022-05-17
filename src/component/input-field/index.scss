@@ -10,8 +10,13 @@ input[type=number] {
 }
 
 .login-card {
+  label {
+    color: #575757;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
   .form-control {
-    background-color: #F5F5F5;
+    // background-color: #F5F5F5;
     border-radius: 5px;
     font-size: 14px;
     min-height: 50px;
@@ -21,6 +26,7 @@ input[type=number] {
       outline: none;
       box-shadow: none;
       border-color: #F4E294;
+      background-color: white !important;
     }
   }
 }

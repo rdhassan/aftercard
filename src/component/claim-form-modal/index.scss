@@ -1,0 +1,224 @@
+.aftercard-modal.claim-form {
+  .backbtn {
+    position: absolute;
+    left: 0;
+    top: 11px;
+  }
+  .modal-lg {
+    max-width: 1170px;
+  }
+  .modal-dialog {
+    .modal-content {
+      padding: 30px 50px !important;
+      box-shadow: 10px 10px 30px #0000000F;
+      border-radius: 5px;
+      border: 0;
+      @media only screen and (max-width : 600px) {
+        padding: 10px 20px !important;
+      }
+      h2,
+      .modal-title {
+        font-size: 20px;
+        font-weight: 700;
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #F4E294;
+      }
+      h2 {
+        font-size: 18px;
+        small {
+          font-size: 12px;
+          font-weight: 400;
+          color: #575757;
+        }
+        .upload-btn {
+          position: relative;
+          overflow: hidden;
+          input {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            cursor: pointer;
+            top: 0;
+            opacity: 0;
+          }
+        }
+      }
+      label {
+        color: #575757;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .form-control {
+        border-radius: 5px;
+        font-size: 14px;
+        min-height: 50px;
+        border-color: transparent;
+        transition: .2s linear;
+        border-color: transparent !important;
+        border-color: #F4E294 !important;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-color: #F4E294 !important;
+          background-color: white !important;
+        }
+      }
+      .fileClaim-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          min-width: 150px;
+          margin: 20px 0;
+          .mute-text {
+            color: #E5E5E5;
+            font-size: 12px;
+            font-weight: 300;
+          }
+          p {
+            color: #575757;
+            font-size: 14px;
+          }
+        }
+      }
+      .aftercard-select {
+        position: relative;
+        select {
+          background: #FDFBF0;
+          border-radius: 5px;
+          height: 50px;
+          border: 0;
+          color: #575757;
+          margin-bottom: 16px;
+          font-size: 14px;
+        }
+        &:after {
+          content: "";
+          display: inline-block;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #F4E294;
+          position: absolute;
+          right: 20px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          height: 6px;
+          pointer-events: none;
+        }
+      }
+      .attachment-file-list {
+        text-align: center;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        overflow-x: auto;
+        /* width */
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+          border-radius: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #F6F6F6; 
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #F8EDAF;
+          border-radius: 10px;
+        }
+
+ 
+        li {
+          position: relative;
+          margin-right: 10px;
+          .btn-close {
+            height: 14px !important;
+            width: 14px !important;
+            border: 1px solid #000;
+            border-radius: 50%;
+            font-size: 10px !important;
+            background-size: 50%;
+            padding: 0;
+            top: 10px;
+            left: 10px;
+          }
+          p {
+            color: #575757;
+            font-size: 10px;
+            margin-top: 6px;
+          }
+          img {
+            background: #FDFBF0;
+            border-radius: 5px;
+            height: 96px;
+            max-width: 96px;
+            min-width: 96px;
+            display: block;
+          }
+        }
+        
+      }
+      .claim-items {
+        list-style: none;
+        max-height: 250px;
+        overflow-y: auto;
+        /* width */
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+          border-radius: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #F6F6F6; 
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #F8EDAF;
+          border-radius: 10px;
+        }
+        li {
+          display: flex;
+          .item-image {
+            img {
+              height: 48px;
+              width: 48px;
+              min-width: 48px;
+              object-fit: cover;
+            }
+          }
+          .item-detail {
+            p {
+              color: #575757;
+              font-size: 14px;
+              line-height: 16px;
+              small {
+                font-size: 10px;
+              }
+            }
+            .price-text {
+              color: #000;
+            }
+          }
+        }
+      }
+      .form-check-input {
+        box-shadow: none !important;
+        border-color: #F4E294;
+        &:checked {
+          background-color: #F4E294;
+          border-color: #F4E294; 
+        }
+      }
+    }
+  }
+
+}
