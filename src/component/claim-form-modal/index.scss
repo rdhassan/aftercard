@@ -166,7 +166,7 @@
       }
       .claim-items {
         list-style: none;
-        max-height: 250px;
+        height: 250px;
         overflow-y: auto;
         /* width */
         &::-webkit-scrollbar {
@@ -174,7 +174,7 @@
           height: 5px;
           border-radius: 10px;
         }
-
+      
         /* Track */
         &::-webkit-scrollbar-track {
           background: #F6F6F6; 
@@ -212,10 +212,10 @@
       }
       .form-check-input {
         box-shadow: none !important;
-        border-color: #F4E294;
+        border-color: #F4E294 !important;
         &:checked {
-          background-color: #F4E294;
-          border-color: #F4E294; 
+          background-color: #F4E294 !important;
+          border-color: #F4E294 !important; 
         }
       }
     }

@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { Row, Col, Button, Modal, Form, InputGroup } from 'react-bootstrap';
+import { Row, Col, Button, Modal, Form, } from 'react-bootstrap';
 import SubmitButton from '../button';
 import InputField from '../input-field';
 import './index.scss';
-import defualtImage from "../../assets/ac-uploaded-image.svg";
 import backicon from "../../assets/ac-back-button.svg";
+import ClaimItems from '../claim-items';
+import defualtImage from "../../assets/ac-uploaded-image.svg";
+
 
 const ClaimFormModal = ({ show, handleClose, sizeModal, modalTitle = "Modal Title" }) => {
   const [files, setFiles] = useState([]);
@@ -86,130 +88,24 @@ const ClaimFormModal = ({ show, handleClose, sizeModal, modalTitle = "Modal Titl
               <small className='2x-text'>Total Products 03</small>
             </h2>
             <ul className='claim-items p-0 m-0'>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
-              <li className='mb-3'>
-                <div className='item-image d-flex'>
-                  <Form.Check
-                    type="checkbox"
-                    className='me-3'
-                  />
-                  <img src={defualtImage} alt='no-image' />
-                </div>
-                <div className='item-detail ps-3'>
-                  <p className='my-0'>Product Name Product Name Product Name Product</p>
-                  <p className='my-0'><small>Product Type</small></p>
-                  <p className='my-0 price-text'><strong>$50</strong></p>
-                </div>
-              </li>
+              <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50"/>
+              <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50"/>
+              <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50"/>
+              <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50"/>
+              <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50"/>
             </ul>
             <div className='d-flex justify-content-end'>
-              <Form.Check type="checkbox" className='mt-3' label= "Select All" />
+              <Form.Check type="checkbox" className='mt-3' label="Select All" />
             </div>
-            <h2 className='border-0 pt-0'>Message us</h2>
+
+            <h2 className='border-0'>Message us</h2>
             <InputField label="" type="textarea" classes="my-2" placeholder="Tracking number" style={{ background: '#f5f5f5f5' }} />
           </Col>
         </Row>
         <div className='mt-3'>
           <Form.Check type="checkbox" className='me-3' label= "I confirm the above information to be accurate" />
           <SubmitButton classes="me-2">Submit</SubmitButton>
-          <SubmitButton classes="me-2" variant="secondary">Cancel</SubmitButton>
+          <SubmitButton classes="me-2" variant="primary outline">Cancel</SubmitButton>
         </div>
       </Modal.Body>
     </Modal>

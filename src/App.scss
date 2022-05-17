@@ -29,3 +29,8 @@ $theme-colors: (
 
 /* import bootstrap to set changes */
 @import "bootstrap/scss/bootstrap";
+
+
+.btn-primary.outline {
+  background-color: transparent !important;
+}
