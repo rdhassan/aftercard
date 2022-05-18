@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start":"npm run dev"
+    "start":"vite --port 3000"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
