@@ -33,7 +33,7 @@ const Dashboard = () => {
     <div className='dashbordpage h-100vh'>
       <SideBar />
       <div className='content p-4'>
-        <ContentHeader heading="Welcome User," subheading="Dashbaord" />
+        <ContentHeader />
         <div className='inner-content d-flex align-items-center justify-content-center'>
           <div className='welcomeBlk py-5 px-2'>
             <h2>Welcome!</h2>
