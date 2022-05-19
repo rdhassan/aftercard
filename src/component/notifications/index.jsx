@@ -1,7 +1,7 @@
 
 import { NavDropdown } from 'react-bootstrap';
 import './index.scss';
-const NotificationsMessages = ({title, count, image}) => {
+const NotificationsMessages = ({title, count, image, viewall}) => {
   return (
     <>
       <div className='inner-head'>
@@ -34,7 +34,7 @@ const NotificationsMessages = ({title, count, image}) => {
         </NavDropdown.Item>
       </div>
       <div className='inner-footer'>
-        <NavDropdown.Item href="#">View All Notifications</NavDropdown.Item>
+        <NavDropdown.Item href="#">{viewall}</NavDropdown.Item>
       </div>
     </>
   )

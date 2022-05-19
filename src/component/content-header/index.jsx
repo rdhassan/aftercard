@@ -21,10 +21,10 @@ const ContentHeader = () => {
         </Form>
 
         <NavDropdown className='action-link comment' title={<img src={Comment} width="20" />} id="basic-nav-dropdown1" align="end">
-          <NotificationsMessages image={Comment} title="Comments" count="(8)" />
+          <NotificationsMessages image={Comment} title="Comments" count="(8)" viewall="View All Comments" />
         </NavDropdown>
         <NavDropdown className='action-link notification' title={<img src={Bell} width="20" />} id="basic-nav-dropdown" align="end">
-          <NotificationsMessages image={Bell}  title="Notifications" count="(6)" />
+          <NotificationsMessages image={Bell}  title="Notifications" count="(6)" viewall="View All Notifications" />
         </NavDropdown>
       </Nav>
     </Navbar>
