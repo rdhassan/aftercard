@@ -23,11 +23,12 @@
       background-color: #fcf8e485;
       border-radius: 5px;
       height: 40px;
-      border: 0;
+      border-color: transparent;
       color: #000;
 
       &:focus {
         box-shadow: none;
+        border-color: #F4E294;
       }
     }
 
