@@ -98,8 +98,8 @@ const ClaimFormModal = ({ show, handleClose, sizeModal, modalTitle = "Modal Titl
               <Form.Check type="checkbox" className='mt-3' label="Select All" />
             </div>
 
-            <h2 className='border-0'>Message us</h2>
-            <InputField label="" type="textarea" classes="my-2" placeholder="Tracking number" style={{ background: '#f5f5f5f5' }} />
+            <h2 className='border-0 pt-1'>Message us</h2>
+            <InputField label="" type="textarea" classes="my-2" placeholder="Type message here" style={{ background: '#f5f5f5f5' }} />
           </Col>
         </Row>
         <div className='mt-3'>

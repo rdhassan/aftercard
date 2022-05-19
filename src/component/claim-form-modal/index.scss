@@ -1,4 +1,8 @@
 .aftercard-modal.claim-form {
+  padding: 0 10px !important;
+  @media only screen and (max-width : 575px) {
+    padding: 0 !important;
+  }
   .backbtn {
     position: absolute;
     left: 0;
@@ -32,12 +36,17 @@
         font-size: 18px;
         small {
           font-size: 12px;
+          line-height: 11px;
           font-weight: 400;
           color: #575757;
         }
         .upload-btn {
           position: relative;
           overflow: hidden;
+          height: 30px;
+          padding: 5px !important;
+          line-height: 14px;
+          font-size: 14px;
           input {
             position: absolute;
             right: 0;
@@ -215,10 +224,12 @@
       }
       .form-check-input {
         box-shadow: none !important;
-        border-color: #F4E294 !important;
+        border: 0;
+        background: url('../../assets/Checkbox-unselected.svg');
+        background-size: 100% 100%;
         &:checked {
-          background-color: #F4E294 !important;
-          border-color: #F4E294 !important; 
+          background: url('../../assets/Checkbox-Selected.svg');
+          background-size: 100% 100%;
         }
       }
     }

@@ -1,7 +1,7 @@
 .merchant {
   .orderID {
     border-bottom: 2px solid #F4E294;
-    padding: 15px 0 24px 0;
+    padding: 5px 0 24px 0;
     p {
       color: #CCCCCC;
       font-size: 14px;
@@ -14,12 +14,12 @@
   .heading {
     font-size: 18px;
     font-weight: 600;
-    padding: 12px 0;
-    margin-bottom: 12px;
+    padding: 14px 0;
+    margin-bottom: 14px;
     border-bottom: 1px solid #F4E294;
   }
   label {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 14px;
   }
   .form-control {
@@ -28,10 +28,64 @@
     height: 40px;
     font-weight: 500;
     font-size: 14px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     &:focus {
       box-shadow: none;
       border-color: #F4E294;
+    }
+  }
+  .cl-value {
+    input {
+      text-align: right;
+    }
+  }
+  .claim-items {
+    list-style: none;
+    height: 180px;
+    overflow-y: auto;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #F6F6F6; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #F8EDAF;
+      border-radius: 10px;
+    }
+    li {
+      display: flex;
+      .me-3 {
+        display: none;
+      }
+      .item-image {
+        img {
+          height: 48px;
+          width: 48px;
+          min-width: 48px;
+          object-fit: cover;
+        }
+      }
+      .item-detail {
+        p {
+          color: #575757;
+          font-size: 14px;
+          line-height: 16px;
+          small {
+            font-size: 10px;
+          }
+        }
+        .price-text {
+          color: #000;
+        }
+      }
     }
   }
 }

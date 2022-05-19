@@ -4,13 +4,14 @@ import backicon from "../../assets/ac-back-button.svg";
 import './dashboard.scss';
 import { Badge, Row, Col } from 'react-bootstrap';
 import InputField from '../../component/input-field';
+import ClaimItems from '../../component/claim-items';
 
 const MerchantDashboard = () => {
   return (
     <div className='dashbordpage merchant h-100vh'>
       <SideBar />
       <div className='content p-4'>
-        <ContentHeader heading="Claim Details" subheading="Claims"/>
+        <ContentHeader heading="Claim Details" subheading="Claims" />
         <div className='inner-content'>
           <div className='orderID d-flex align-items-end'>
             <a href='#' className='backbtn'>
@@ -52,9 +53,34 @@ const MerchantDashboard = () => {
             </Col>
             <Col lg={5}>
               <h2 className='heading'>Product Details</h2>
+              <Row>
+                <Col md={9} className="cl-value">
+                  <InputField label="Claim Value" type="number" placeholder="Value" />
+                </Col>
+              </Row>
+              <label>5 Products in claim</label>
+              <ul className='claim-items p-0 m-0'>
+                <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50" />
+                <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50" />
+                <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50" />
+                <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50" />
+                <ClaimItems title="Product Name Product Name Product Name Product" type="Product Type" price="$50" />
+              </ul>
             </Col>
           </Row>
-          
+          <Row>
+            <Col lg={7}>
+              <h2 className='heading'>Attachments</h2>
+              <Row>
+                <Col md={6}>
+                  <InputField label="Email" type="Email" placeholder="Email" />
+                </Col>
+                <Col md={6}>
+                  <InputField label="Phone Number" type="phone" placeholder="Phone Number" />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </div>
       </div>
     </div>
