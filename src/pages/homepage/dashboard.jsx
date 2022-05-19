@@ -33,8 +33,8 @@ const Dashboard = () => {
     <div className='dashbordpage h-100vh'>
       <SideBar />
       <div className='content p-4'>
-        <ContentHeader />
-        <div className='inner-content'>
+        <ContentHeader heading="Welcome User," subheading="Dashbaord" />
+        <div className='inner-content d-flex align-items-center justify-content-center'>
           <div className='welcomeBlk py-5 px-2'>
             <h2>Welcome!</h2>
             <div className='letsget d-flex flex-column align-items-center justify-content-center'>

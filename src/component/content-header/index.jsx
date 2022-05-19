@@ -3,12 +3,12 @@ import Comment from "../../assets/comment-s.svg";
 import Bell from "../../assets/bell.svg";
 import './index.scss';
 import NotificationsMessages from '../notifications'
-const ContentHeader = () => {
+const ContentHeader = ({heading, subheading}) => {
   return (
     <Navbar className='content-header p-0 flex-wrap'>
       <div className='content-heading'>
-        <h3 className='text-primary m-0'>Dashbaord</h3>
-        <h2 className='m-0'>Welcome User,</h2>
+        <h3 className='text-primary m-0'>{subheading}</h3>
+        <h2 className='m-0'>{heading}</h2>
       </div>
       <Nav className="ms-auto content-notification py-2">
         <Form className="d-flex ms-auto">
