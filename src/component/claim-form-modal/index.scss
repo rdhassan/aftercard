@@ -3,6 +3,9 @@
     position: absolute;
     left: 0;
     top: 11px;
+    @media only screen and (max-width : 600px) {
+      position: static;
+    }
   }
   .modal-lg {
     max-width: 1170px;

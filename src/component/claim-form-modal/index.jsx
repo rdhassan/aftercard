@@ -12,7 +12,7 @@ const ClaimFormModal = ({ show, handleClose, sizeModal, modalTitle = "Modal Titl
   const [files, setFiles] = useState([]);
   return (
     <Modal className='aftercard-modal claim-form' show={show} onHide={handleClose} size={sizeModal} aria-labelledby="contained-modal-title-vcenter" centered>
-      <Modal.Body className='py-0 pr-0 ps-5'>
+      <Modal.Body className='py-0 px-0 ps-md-5'>
         <a href='#' className='backbtn'>
           <img src={backicon} alt='no-image' width={30} />
         </a>
