@@ -14,6 +14,12 @@
   }
 
   .content-notification {
+    @media only screen and (max-width: 520px) {
+      width: 100%;
+      form.d-flex {
+        flex: 1;
+      }
+    }
     .form-control {
       background: url('../../assets/search.svg') no-repeat;
       background-size: 20px;
@@ -43,7 +49,9 @@
     }
 
     .action-link {
-      
+      @media only screen and (max-width: 520px) {
+        position: static;
+      }
       .dropdown-menu {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 10px 10px 30px #00000026;
@@ -54,6 +62,10 @@
         padding: 0;
         animation: growDown 0.5s ease-in-out forwards;
         transform-origin: top center;
+        @media only screen and (max-width: 520px) {
+          min-width: 260px;
+          width: 100%;
+        }
         @keyframes growDown {
           0% {
             opacity: 0;
@@ -112,6 +124,7 @@
             border-bottom: 1px solid #CCCCCC;
             border-left: 5px solid #CCCCCC;
             padding: 10px 20px;
+            white-space: normal;
 
             p {
               color: #575757;

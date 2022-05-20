@@ -20,7 +20,10 @@ $theme-colors: (
   "danger": #dc3545,
   "light": #f8f9fa,
   "dark": #343a40,
-  "black": #000000
+  "black": #000000,
+  "assign": #CCCCCC,
+  "approve": #575757
+
 );
 
 @function theme-color($key: "primary") {

@@ -41,7 +41,6 @@
     background-color: #EFEFEF;
     border-color: transparent;
     width: 100%;
-    // transform: inherit !important;
     inset: auto !important;
     top: 42px !important;
     border-radius: 0 0 5px 5px;
@@ -66,6 +65,7 @@
       background-color: transparent !important;
       padding: 10px 20px;
       font-size: 14px;
+      white-space: normal;
       &:last-child {
         border-bottom: 0;
       }

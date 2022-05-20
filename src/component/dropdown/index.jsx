@@ -8,7 +8,7 @@ const DropdownSelect = ({title, items=[]}) => {
           variant="outline-secondary"
           title={title}
         >
-          {items.map((item,index)=>(<Dropdown.Item key={index} >{item}</Dropdown.Item>))}
+          {items.map((item, index)=>(<Dropdown.Item key={index} href="#">{item}</Dropdown.Item>))}
           {/* <Dropdown.Item href="#"></Dropdown.Item>
           <Dropdown.Item href="#"></Dropdown.Item>
           <Dropdown.Item href="#"></Dropdown.Item>
