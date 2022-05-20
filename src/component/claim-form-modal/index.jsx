@@ -1,12 +1,18 @@
 import { useState } from 'react';
-import { Row, Col, Button, Modal, Form, } from 'react-bootstrap';
+import { Row, Col, Button, Modal, Form } from 'react-bootstrap';
 import SubmitButton from '../button';
 import InputField from '../input-field';
 import './index.scss';
 import backicon from "../../assets/ac-back-button.svg";
 import ClaimItems from '../claim-items';
 import defualtImage from "../../assets/ac-uploaded-image.svg";
+import DropdownSelect from '../dropdown';
 
+
+
+const claimType = ['Stolen','Lost','Tampered','Claim Issue'];
+const request = ['Refund','Replacement'];
+const claimIssue = ['Delivered but was Tampered with','Lost during the delivery','Tampered with the items at the time of Delivery','Items Damaged beyond repair'];
 
 const ClaimFormModal = ({ show, handleClose, sizeModal, modalTitle = "Modal Title" }) => {
   const [files, setFiles] = useState([]);
@@ -31,26 +37,14 @@ const ClaimFormModal = ({ show, handleClose, sizeModal, modalTitle = "Modal Titl
             </ul>
             <h2 className='mb-3'>Claim Request</h2>
             <Row>
-              <Col md={6}>
-                <div className="aftercard-select">
-                  <Form.Select>
-                    <option>Claim Type</option>
-                  </Form.Select>
-                </div>
+              <Col md={6} className="z-up">
+                <DropdownSelect title="Claim Type" items={claimType}/>
               </Col>
-              <Col md={6}>
-                <div className="aftercard-select">
-                  <Form.Select>
-                    <option>Request</option>
-                  </Form.Select>
-                </div>
+              <Col md={6} className="z-up2">
+                <DropdownSelect title="Request" items={request}/>
               </Col>
               <Col md={12}>
-                <div className="aftercard-select">
-                  <Form.Select>
-                    <option>Claim Issue</option>
-                  </Form.Select>
-                </div>
+                <DropdownSelect title="Claim Issue" items={claimIssue}/>
               </Col>
             </Row>
             <h2 className='mt-4 mb-3 d-flex flex-wrap align-items-center justify-content-between'>
