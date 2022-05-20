@@ -3,6 +3,7 @@ import SideBar from '../../component/sidebar';
 import backicon from "../../assets/ac-back-button.svg";
 import plus from "../../assets/ac-add-a-note.svg";
 import shopify from "../../assets/ac-shopify-icom.svg";
+import byDefault from "../../assets/ac-shopify-icom.svg";
 
 import './dashboard.scss';
 import { Badge, Row, Col,Carousel,Button } from 'react-bootstrap';
@@ -68,7 +69,7 @@ const MerchantDashboard = () => {
                 <Col md={9} className="cl-value pe-lg-0">
                   <InputField label="Claim Value" type="number" placeholder="Value" />
                 </Col>
-                <Col md={3} className="text-center mb-10">
+                <Col md={3} className="text-md-center mb-10">
                   <label className='w-100'>Order Source</label>
                   <a href='#'>
                     <img src={shopify} height="40" />
@@ -88,6 +89,10 @@ const MerchantDashboard = () => {
           <Row>
             <Col lg={7}>
               <h2 className='heading'>Attachments</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={7}>
               <Row>
                 <Col lg={6}>
                   <div className='attachment-heading'>
@@ -148,6 +153,13 @@ const MerchantDashboard = () => {
                   </Carousel>
                 </Col>
               </Row>
+            </Col>
+            <Col lg={5}>
+              <div className='attachment-heading'>
+                <p className="inner d-flex justify-content-between align-items-center">
+                  Evidence
+                </p>
+              </div>
             </Col>
           </Row>
         </div>
