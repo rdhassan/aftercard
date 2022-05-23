@@ -23,8 +23,7 @@ $theme-colors: (
   "black": #000000,
   "assign": #CCCCCC,
   "approve": #575757
-
-);
+ );
 
 @function theme-color($key: "primary") {
   @return map-get($theme-colors, $key);

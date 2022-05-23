@@ -3,10 +3,12 @@ import SideBar from '../../component/sidebar';
 import backicon from "../../assets/ac-back-button.svg";
 import plus from "../../assets/ac-add-a-note.svg";
 import shopify from "../../assets/ac-shopify-icom.svg";
-import byDefault from "../../assets/ac-shopify-icom.svg";
+import byDefault from "../../assets/ac-uploaded-image.svg";
+import expand from "../../assets/awesome-expand-arrows-alt.svg";
+import info from "../../assets/awesome-exclamation-triangle.svg";
 
 import './dashboard.scss';
-import { Badge, Row, Col,Carousel,Button } from 'react-bootstrap';
+import { Badge, Row, Col, Carousel, Button } from 'react-bootstrap';
 import InputField from '../../component/input-field';
 import ClaimItems from '../../component/claim-items';
 import SubmitButton from '../../component/button';
@@ -97,11 +99,11 @@ const MerchantDashboard = () => {
                 <Col lg={6}>
                   <div className='attachment-heading'>
                     <p className="inner d-flex justify-content-between align-items-center">
-                      Notes 
+                      Notes
                       <a href='#'><img src={plus} alt='no-image' width={20} /></a>
                     </p>
                   </div>
-                  <Carousel className='notes-slider mb-5' variant="dark"  touch={true} controls={false}>
+                  <Carousel className='notes-slider mb-5' variant="dark" touch={true} controls={false}>
                     <Carousel.Item>
                       <div className='note-card d-flex flex-column justify-content-between p-4'>
                         <div className='scroll pe-lg-5'>
@@ -135,7 +137,7 @@ const MerchantDashboard = () => {
                       Chats
                     </p>
                   </div>
-                  <Carousel className='notes-slider chat-slider mb-5' variant="dark"  touch={true} controls={false} indicators={false}>
+                  <Carousel className='notes-slider chat-slider mb-5' variant="dark" touch={true} controls={false} indicators={false}>
                     <Carousel.Item>
                       <div className='note-card d-flex flex-column justify-content-between p-3'>
                         <div className='bg-white p-3'>
@@ -155,11 +157,57 @@ const MerchantDashboard = () => {
               </Row>
             </Col>
             <Col lg={5}>
-              <div className='attachment-heading'>
-                <p className="inner d-flex justify-content-between align-items-center">
-                  Evidence
-                </p>
-              </div>
+              <Row>
+                <Col md={7}>
+                  <div className='attachment-heading'>
+                    <p className="inner d-flex justify-content-between align-items-center">
+                      Evidence
+                    </p>
+                  </div>
+                  <div className="pic-list">
+                    <ul className='d-flex scroll-bar p-0'>
+                      <li className='d-flex flex-column'>
+                        <div className='img-block'>
+                          <img src={byDefault} alt="" />
+                          <span className='expand'><img src={expand} width="10" /></span>
+                        </div>
+                        <div className='img-block'>
+                          <img src={byDefault} alt="" />
+                          <span className='expand'><img src={expand} width="10" /></span>
+                        </div>
+                      </li>
+                      <li className='d-flex flex-column'>
+                        <div className='img-block'>
+                          <img src={byDefault} alt="" />
+                          <span className='expand'><img src={expand} width="10" /></span>
+                        </div>
+                        <div className='img-block'>
+                          <img src={byDefault} alt="" />
+                          <span className='expand'><img src={expand} width="10" /></span>
+                        </div>
+                      </li>
+                      <li className='d-flex flex-column'>
+                        <div className='img-block'>
+                          <img src={byDefault} alt="" />
+                          <span className='expand'><img src={expand} width="10" /></span>
+                        </div>
+                        <div className='img-block'>
+                          <img src={byDefault} alt="" />
+                          <span className='expand'><img src={expand} width="10" /></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+                <Col md={5} className="ps-md-0 d-flex">
+                  <div className="request-block d-flex justify-content-center align-items-center flex-column w-100">
+                    <img src={info} className="mb-3" />
+                    <h6 className='req-title'>Request</h6>
+                    <p>Request more info, if the provided data isn't enough</p>
+                    <SubmitButton variant="assign">Request</SubmitButton>
+                  </div>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </div>

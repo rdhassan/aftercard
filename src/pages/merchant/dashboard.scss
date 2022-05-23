@@ -18,12 +18,14 @@
       font-size: 22px;
       font-weight: 600;
     }
+
     .actionBtns {
       button {
         min-height: 42px;
       }
     }
   }
+
   .mb-10 {
     margin-bottom: 10px;
   }
@@ -58,6 +60,9 @@
   .cl-value {
     input {
       text-align: right;
+      @media only screen and (max-width: 991px) {
+        text-align: left;
+      }
     }
   }
 
@@ -124,26 +129,30 @@
       font-weight: 600;
     }
   }
+
   .notes-slider {
     .carousel-indicators {
       bottom: -45px;
+
       button {
         height: 8px;
         width: 8px;
         border-radius: 8px;
         border: 1px solid #F4E294;
         background-color: #fff;
+
         &.active {
           background-color: #F4E294;
         }
       }
     }
+
     .note-card {
       background-color: #FDFBF0;
       padding: 30px 20px 20px 26px;
       border-radius: 5px;
       position: relative;
-      
+
       &:after {
         content: '';
         position: absolute;
@@ -157,6 +166,7 @@
         height: 124px;
         overflow-y: auto;
         margin-bottom: 35px;
+
         /* width */
         &::-webkit-scrollbar {
           width: 5px;
@@ -218,15 +228,18 @@
       }
     }
   }
+
   .chat-slider {
     .scroll {
       height: 108px !important;
       margin-bottom: 10px !important;
+
       /* Track */
       &::-webkit-scrollbar-track {
         background: #F6F6F6 !important;
       }
     }
+
     .chat-btn {
       font-size: 12px;
       font-weight: 600 !important;
@@ -236,6 +249,7 @@
       margin-top: 15px;
       min-height: 36px;
       position: relative;
+
       &.active {
         &:after {
           content: "";
@@ -250,10 +264,72 @@
         }
       }
     }
+
     .note-card {
       &:after {
         display: none;
       }
+    }
+  }
+
+  .pic-list {
+
+    .scroll-bar::-webkit-scrollbar {
+      height: 6px;
+    }
+    .scroll-bar::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #F6F6F6;
+      border-radius: 8px;
+      background-color: #F6F6F6;
+    }
+    .scroll-bar::-webkit-scrollbar-thumb {
+      background: #F8EDAF;
+      border-radius: 8px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      overflow-x: auto;
+      max-width: calc(100vw - 60px);
+      li {
+        min-width: 116px;
+        margin-right: 18px;
+        .img-block {
+          display: flex;
+          position: relative;
+          > img {
+            width: 100%;
+            height: 118px;
+            margin-bottom: 15px;
+            object-fit: cover;
+          }
+          .expand {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+
+  .request-block {
+    border: 1px solid #F4E294;
+    border-radius: 5px;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    .req-title {
+        font-size: 20px;
+    }
+    p {
+        max-width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 20px;
     }
   }
 }
