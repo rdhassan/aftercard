@@ -1,0 +1,26 @@
+.orderID {
+  border-bottom: 2px solid #F4E294;
+  padding: 5px 0 24px 0;
+
+  .backbtn {
+    img {
+      min-width: 40px;
+    }
+  }
+
+  p {
+    color: #CCCCCC;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .actionBtns {
+    button {
+      min-height: 42px;
+    }
+  }
+}

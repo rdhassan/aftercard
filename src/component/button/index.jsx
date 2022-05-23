@@ -1,8 +1,9 @@
 import { Button } from 'react-bootstrap';
 import './index.scss';
-const SubmitButton = ({ variant, children, classes }) => {
+
+const SubmitButton = ({ variant, children, classes, onClick }) => {
   return (
-    <Button className={`px-3 ${classes}`} variant={variant} type="submit">
+    <Button onClick={onClick} className={`px-3 ${classes}`} variant={variant} type="submit">
       {children}
     </Button>
   )

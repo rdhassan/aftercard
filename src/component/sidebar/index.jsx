@@ -6,7 +6,14 @@ import setting from '../../assets/setting.svg';
 import comment2x from '../../assets/comment-2x.svg';
 import logout from '../../assets/logout.svg';
 import './index.scss';
+import { Link } from 'react-router-dom';
 const SideBar = () => {
+  
+  const logoutHandler = () => {
+    // LOGOUT FUNCTION
+    console.log("Logout function called");
+  }
+
   return (
     <div expand="md" className='py-5 sidebar'>
       <div className='top'>
@@ -32,7 +39,7 @@ const SideBar = () => {
             <img src={comment2x} alt="no-logo" />
             <a href='#' className='sup-link text-decoration-none text-center'>Support</a>
           </div>
-          <ListGroup.Item action href="#link1">
+          <ListGroup.Item onClick={logoutHandler} action href="#a">
             <img src={logout} alt="no-logo" /> Log-Out
           </ListGroup.Item>
         </ListGroup>

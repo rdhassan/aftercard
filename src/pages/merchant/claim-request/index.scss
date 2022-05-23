@@ -1,0 +1,69 @@
+.merchant {
+
+  .cl-value {
+    input {
+      text-align: right;
+      @media only screen and (max-width: 991px) {
+        text-align: left;
+      }
+    }
+  }
+
+  .claim-items {
+    list-style: none;
+    height: 182px;
+    overflow-y: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #F6F6F6;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #F8EDAF;
+      border-radius: 10px;
+    }
+
+    li {
+      display: flex;
+
+      .me-3 {
+        display: none;
+      }
+
+      .item-image {
+        img {
+          height: 50px;
+          width: 50px;
+          min-width: 48px;
+          object-fit: cover;
+        }
+      }
+
+      .item-detail {
+        p {
+          color: #575757;
+          font-size: 14px;
+          line-height: 16px;
+
+          small {
+            font-size: 10px;
+          }
+        }
+
+        .price-text {
+          color: #000;
+        }
+      }
+    }
+  }
+
+}
