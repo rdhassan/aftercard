@@ -8,11 +8,17 @@ import expand from "../../assets/awesome-expand-arrows-alt.svg";
 import info from "../../assets/awesome-exclamation-triangle.svg";
 
 import './dashboard.scss';
-import { Badge, Row, Col, Carousel, Button } from 'react-bootstrap';
+import { Badge, Row, Col, Carousel, Button, Modal } from 'react-bootstrap';
 import InputField from '../../component/input-field';
 import ClaimItems from '../../component/claim-items';
 import SubmitButton from '../../component/button';
+import React, { useState } from 'react';
+import PictureModal from '../../component/picture-modal';
 const MerchantDashboard = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div className='dashbordpage merchant h-100vh'>
       <SideBar />
@@ -169,7 +175,7 @@ const MerchantDashboard = () => {
                       <li className='d-flex flex-column'>
                         <div className='img-block'>
                           <img src={byDefault} alt="" />
-                          <span className='expand'><img src={expand} width="10" /></span>
+                          <span className='expand' onClick={handleShow}><img src={expand} width="10" /></span>
                         </div>
                         <div className='img-block'>
                           <img src={byDefault} alt="" />
@@ -210,6 +216,8 @@ const MerchantDashboard = () => {
               </Row>
             </Col>
           </Row>
+
+          <PictureModal show={show} handleClose={handleClose} />
         </div>
       </div>
     </div>
