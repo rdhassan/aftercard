@@ -1,0 +1,55 @@
+.team {
+  .addEmainl {
+    hr {
+      background-color: #ccc;
+    }
+    > div {
+      flex: 1;
+      padding-right: 15px;
+    }
+    .form-control {
+      border-color: #F4E294;
+      box-shadow: none;
+      flex: 1;
+      font-size: 14px;
+    }
+  }
+  .teamMember {
+    border: 1px solid #F4E294;
+    border-radius: 5px;
+    width: 100%;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+      img {
+        min-width: 14px;
+      }
+    }
+    p {
+      margin: 15px 0;
+      color: #575757;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .email-edit {
+      background: #FFFDF2;
+      border-radius: 5px;
+      display: flex;
+      padding: 10px 12px;
+      align-items: center;
+      justify-content: space-between;
+      input {
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
