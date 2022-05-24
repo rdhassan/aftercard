@@ -1,0 +1,39 @@
+.merchant-detail {
+  .product-detail {
+    .pd-in {
+      background-color: #F8EDAF;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      width: 100%;
+      padding: 4px 20px;
+      border-radius: 5px;
+      align-items: center;
+      min-width: 250px;
+      min-height: 50px;
+      img {
+        margin-right: 15px;
+      }
+    }
+    .form-control {
+      background-color: #fff !important;
+      border-color: #F4E294 !important;
+      max-width: 130px;
+      min-height: 50px;
+      margin: 8px 15px !important;
+      @media only screen and (max-width: 600px) {
+        flex: 1;
+        min-width: 130px;
+        max-width: inherit;
+        margin-left: 0 !important;
+      }
+    }
+  }
+  h6 {
+    color: #575757;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+  }
+
+}

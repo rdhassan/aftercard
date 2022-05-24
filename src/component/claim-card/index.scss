@@ -1,0 +1,29 @@
+.claim-card {
+  background: url('../../assets/detail-bg.png') no-repeat;
+  background-size: 250px;
+  background-position: top right;
+  background-color: #fefcf3;
+  text-align: right;
+  padding: 20px 20px 20px 60px;
+  border-radius: 5px;
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  img {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+}

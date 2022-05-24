@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.404" height="38.512" viewBox="0 0 38.404 38.512">
+  <g id="Group_709" data-name="Group 709" transform="translate(-545.5 -521)">
+    <rect id="Rectangle_379" data-name="Rectangle 379" width="38.404" height="38.512" rx="5" transform="translate(545.5 521)" fill="#fdfbf0"/>
+    <g id="Icon_ionic-md-photos" data-name="Icon ionic-md-photos" transform="translate(556.362 531.954)" opacity="0.57">
+      <path id="Path_80" data-name="Path 80" d="M19.715,22.273V9.863a1.99,1.99,0,0,0-1.982-1.988H5.357A1.99,1.99,0,0,0,3.375,9.863V22.277a1.99,1.99,0,0,0,1.982,1.988h12.38A2,2,0,0,0,19.715,22.273ZM8.449,16.812l2.1,2.979,3.1-4.469,4.085,5.958H5.357Z" transform="translate(-3.375 -7.875)" fill="#f5e7a7"/>
+    </g>
+  </g>
+</svg>
