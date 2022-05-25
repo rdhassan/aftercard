@@ -76,7 +76,7 @@ const SettingPage = () => {
                     </Form>
                 </div>
                 <div className='widget-field d-flex align-items-center justify-content-between mb-2'>
-                  <Form.Label htmlFor="exampleColorInput">Insurance Widget always ON Check out</Form.Label>
+                  <Form.Label htmlFor="exampleColorInput">Notification Alert</Form.Label>
                   <Form>
                       <Form.Check 
                         type="switch"
