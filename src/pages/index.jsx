@@ -3,6 +3,7 @@ import Dashboard from "./homepage/dashboard";
 import Login from "./login/login";
 import MerchantDetail from "./merchant-detail";
 import MerchantDashboard from "./merchant/dashboard";
+import SettingPage from "./setting";
 import TeamPage from "./team/team";
 
 const Pages = () => {
@@ -14,6 +15,7 @@ const Pages = () => {
         <Route path='/merchantdashboard' element={<MerchantDashboard />} />
         <Route path='/team' element={<TeamPage />} />
         <Route path='/merchant-detail' element={<MerchantDetail />} />
+        <Route path='/setting' element={<SettingPage />} />
       </Routes>
     </BrowserRouter>
   )
