@@ -7,8 +7,8 @@
     .form-check-input {
       width: 40px !important;
       height: 20px !important;
+      border-width: 2px !important;
     }
-
   }
   .form-check-input:focus {
     box-shadow: none !important;
@@ -122,12 +122,16 @@
         background-color: #F4E294;
       }
     }
+    .form-check-input {
+      border-width: 1px !important;
+    }
     .form-check-input:checked {
       background-color: rgba(238, 238, 238, 0.685);
-      border-color: transparent;
+      border-color: transparent !important;
       box-shadow: none !important;
       background-position: right center;
       background-image: url('../../assets/dot.svg');
+     
     }
   }
 }
