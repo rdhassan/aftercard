@@ -2,6 +2,7 @@ import { Row, Col,Button,Form } from 'react-bootstrap';
 import ContentHeader from '../../component/content-header';
 import InputField from '../../component/input-field';
 import SideBar from '../../component/sidebar';
+import Sheild from '../../assets/ac-sheild.svg'
 import './index.scss';
 
 const SettingPage = () => {
@@ -46,7 +47,9 @@ const SettingPage = () => {
                 <div className='insure-pd card flex-1 mb-4 d-flex align-items-center justify-content-center p-lg-5 p-3'>
                   <div className='inner d-flex align-items-center justify-content-between'>
                     <div className='detail-in d-flex align-items-center'>
-                      <span className='icon'></span>
+                      <span className='icon d-flex align-items-center justify-content-center'>
+                        <img src={Sheild} />
+                      </span>
                       <span className='d-inline-flex mx-3'>Insure the product(s) with Aftercart</span>
                     </div>
                     <Form>
