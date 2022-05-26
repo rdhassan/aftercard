@@ -10,17 +10,18 @@
       border-width: 0.1rem !important;
     }
   }
-  .form-check-input:focus {
+  .form-check-input {
     box-shadow: none !important;
     border-color: rgba(0, 0, 0, 0.25) !important;
-    background-image: url('../../assets/dot.svg');
+    background-image: url('../../assets/gray-dot.svg') !important;
   }
+
   .form-check-input:checked {
     background-color: transparent;
     border-color: rgba(0, 0, 0, 0.25) !important;
     box-shadow: none !important;
     background-position: right center;
-    background-image: url('../../assets/dot.svg');
+    background-image: url('../../assets/dot.svg') !important;
   }
   label {
     min-width: 260px;
@@ -130,7 +131,7 @@
       border-color: transparent !important;
       box-shadow: none !important;
       background-position: right center;
-      background-image: url('../../assets/dot.svg');
+      background-image: url('../../assets/dot-border.svg') !important;
      
     }
   }
