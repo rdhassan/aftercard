@@ -31,7 +31,17 @@
       height: 40px;
       border-color: transparent;
       color: #000;
-
+      &::placeholder {
+        opacity: 0.5; /* Firefox */
+      }
+      
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        opacity: 0.5; /* Firefox */
+      }
+      
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        opacity: 0.5; /* Firefox */
+      }
       &:focus {
         box-shadow: none;
         border-color: #F4E294;

@@ -17,7 +17,7 @@ const SettingPage = () => {
             <Row>
               <Col lg={7}>
                 <div className='color-field d-flex align-items-center mb-3'>
-                  <Form.Label htmlFor="exampleColorInput">Choose a color for the widget</Form.Label>
+                  <Form.Label>Choose a color for the widget</Form.Label>
                   <div className='inner'>
                     <Form.Control
                       type="color"
@@ -28,17 +28,17 @@ const SettingPage = () => {
                   </div>
                 </div>
                 <div className='widget-field d-flex align-items-center justify-content-between mb-3'>
-                  <Form.Label htmlFor="exampleColorInput">Change the Font for the widget</Form.Label>
+                  <Form.Label>Change the Font for the widget</Form.Label>
                   <Form.Select aria-label="Default select example">
                     <option>Montserrat</option>
                   </Form.Select>
                 </div>
                 <div className='widget-field d-flex align-items-center justify-content-between mb-3'>
-                  <Form.Label htmlFor="exampleColorInput">Change the Font for the widget</Form.Label>
+                  <Form.Label>Change Description</Form.Label>
                   <InputField type="text" placeholder="Type here 0-30 Characters allowed" />
                 </div>
                 <div className='widget-field d-flex align-items-center justify-content-between mb-3'>
-                  <Form.Label htmlFor="exampleColorInput">Upload Icon <small>Icon Must be 40x40 Pixel</small></Form.Label>
+                  <Form.Label>Upload Icon <small>Icon Must be 40x40 Pixel</small></Form.Label>
                   <Button type="button" className="upload-btn btn btn-primary">Upload<input type="file" multiple="" /></Button>
                 </div>
               </Col>
