@@ -5,6 +5,9 @@ import list from '../../assets/list.svg';
 import setting from '../../assets/setting.svg';
 import comment2x from '../../assets/comment-2x.svg';
 import logout from '../../assets/logout.svg';
+import Team from '../../assets/team.svg';
+import FileBlack from '../../assets/file-black.svg';
+import Transition from '../../assets/transition.svg';
 import './index.scss';
 import { Link } from 'react-router-dom';
 const SideBar = () => {
@@ -26,7 +29,16 @@ const SideBar = () => {
             <img src={home} alt="no-logo" /> Dashboard
           </ListGroup.Item>
           <ListGroup.Item action href="#link2">
-            <img src={list} alt="no-logo" /> Shipments
+            <img src={list} alt="no-logo" /> Claims
+          </ListGroup.Item>
+          <ListGroup.Item action href="#link2">
+            <img src={FileBlack} alt="no-logo" /> Merchants
+          </ListGroup.Item>
+          <ListGroup.Item action href="#link2">
+            <img src={Team} alt="no-logo" /> Team
+          </ListGroup.Item>
+          <ListGroup.Item action href="#link2">
+            <img src={Transition} alt="no-logo" /> Transactions
           </ListGroup.Item>
           <ListGroup.Item action href="#link3">
             <img src={setting} alt="no-logo" /> Settings

@@ -7,7 +7,7 @@ const ContentHeader = ({heading, subheading}) => {
   return (
     <Navbar className='content-header p-0 flex-wrap'>
       <div className='content-heading'>
-        <h3 className='text-primary m-0'>{subheading}</h3>
+        <h3 className='text-assign m-0'>{subheading}</h3>
         <h2 className='m-0'>{heading}</h2>
       </div>
       <Nav className="ms-auto content-notification py-2">
