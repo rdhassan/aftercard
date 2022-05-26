@@ -14,14 +14,14 @@
     box-shadow: none !important;
     border-color: rgba(0, 0, 0, 0.25) !important;
     background-image: url('../../assets/gray-dot.svg') !important;
+    background-size: 20px !important;
   }
 
   .form-check-input:checked {
     background-color: transparent;
     border-color: rgba(0, 0, 0, 0.25) !important;
     box-shadow: none !important;
-    background-position: right center;
-    background-image: url('../../assets/dot.svg') !important;
+    background-image: url('../../assets/yellow-dot.svg') !important;
   }
   label {
     min-width: 260px;
@@ -130,9 +130,9 @@
       background-color: rgba(238, 238, 238, 0.685);
       border-color: transparent !important;
       box-shadow: none !important;
-      background-position: right center;
-      background-image: url('../../assets/dot-border.svg') !important;
-     
+      background-image: url('../../assets/border-dot.svg') !important;
+      background-size: 40% !important;
+      background-position: 84% center !important;
     }
   }
 }
