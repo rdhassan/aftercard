@@ -32,6 +32,7 @@ const Admin = () => {
                 <Dropdown.Item as="button">Custom</Dropdown.Item>
               </DropdownButton>
             </div>
+            
             <Row className='five-column'>
               <Col lg={2} className="px-2">
                 <ClaimCard title="Total Protection Fees" value="15" icon={dollor} />
