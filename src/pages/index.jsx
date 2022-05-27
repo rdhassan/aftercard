@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Admin from "./admin";
 import Dashboard from "./homepage/dashboard";
 import Login from "./login/login";
 import MerchantDetail from "./merchant-detail";
@@ -16,6 +17,7 @@ const Pages = () => {
         <Route path='/team' element={<TeamPage />} />
         <Route path='/merchant-detail' element={<MerchantDetail />} />
         <Route path='/setting' element={<SettingPage />} />
+        <Route path='/admin' element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )
