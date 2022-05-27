@@ -36,7 +36,7 @@ const MerchantDetail = () => {
             <Col lg={6}>
               <h2 class="heading">Value Edit</h2>
 
-              <h6>Change Description</h6>
+              <h6>Change Product Rate</h6>
               <div className='product-detail d-flex flex-wrap align-items-center'>
                 <div className='pd-in flex-1 my-2'>
                   <img src={defaultImg} />
