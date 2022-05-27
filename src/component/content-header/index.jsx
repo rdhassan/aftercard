@@ -3,6 +3,7 @@ import Comment from "../../assets/comment-s.svg";
 import Bell from "../../assets/bell.svg";
 import './index.scss';
 import NotificationsMessages from '../notifications'
+import SearchField from '../seach-field';
 const ContentHeader = ({heading, subheading}) => {
   return (
     <Navbar className='content-header p-0 flex-wrap'>
@@ -11,15 +12,8 @@ const ContentHeader = ({heading, subheading}) => {
         <h2 className='m-0'>{heading}</h2>
       </div>
       <Nav className="ms-auto content-notification py-2">
-        <Form className="d-flex ms-auto">
-          <FormControl
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-        </Form>
-
+        <SearchField />
+        
         <NavDropdown className='action-link comment' title={<img src={Comment} width="20" />} id="basic-nav-dropdown1" align="end">
           <NotificationsMessages image={Comment} title="Comments" count="(8)" viewall="View All Comments" />
         </NavDropdown>

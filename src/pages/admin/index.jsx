@@ -1,10 +1,11 @@
-import { Row, Col, Form, DropdownButton, Dropdown } from 'react-bootstrap';
+import { Row, Col, Form, DropdownButton, Dropdown, FormControl } from 'react-bootstrap';
 import ContentHeader from '../../component/content-header';
 import SideBar from '../../component/sidebar';
 import './index.scss';
 import dollor from '../../assets/dollor.svg';
 import graph from '../../assets/graph.svg';
 import ClaimCard from '../../component/claim-card';
+import SearchField from '../../component/seach-field';
 
 const Admin = () => {
   return (
@@ -14,6 +15,14 @@ const Admin = () => {
         <ContentHeader heading="Welcome Username," subheading="Dashbaord" />
         <div className='inner-content'>
           <div className='mt-5'>
+
+
+            <Row>
+              <Col lg={8}>
+                <SearchField tags />
+              </Col>
+            </Row>
+
             <div className='d-flex justify-content-end mb-4 post-day-dropdown'>
               <DropdownButton align="end" id="dropdown-item-button" title="Past 7 Days">
                 <Dropdown.Item as="button">Past Month</Dropdown.Item>
