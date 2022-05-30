@@ -3,6 +3,7 @@ import Admin from "./admin";
 import Dashboard from "./homepage/dashboard";
 import Login from "./login/login";
 import MerchantDetail from "./merchant-detail";
+import MerchantSettingPage from "./merchant-setting";
 import MerchantDashboard from "./merchant/dashboard";
 import SettingPage from "./setting";
 import SignUp from "./signup";
@@ -20,6 +21,7 @@ const Pages = () => {
         <Route path='/setting' element={<SettingPage />} />
         <Route path='/admin' element={<Admin />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/merchant-setting' element={<MerchantSettingPage />} />
       </Routes>
     </BrowserRouter>
   )
