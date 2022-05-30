@@ -87,7 +87,8 @@
   @media only screen and (max-width: 1024px) {
     &::after {
       content: "⇄";
-      padding: 0 8px;
+      cursor: pointer;
+      padding: 0 5px;
       font-size: 16px;
       border-radius: 0 5px 5px 0;
       background-color: #F4E294;
@@ -97,9 +98,11 @@
       position: fixed;
       top: 0;
       left: 0;
+      min-width: 24px;
     }
     input:checked ~ .sidebar {
       left: 0;
     }
   }
 }
+

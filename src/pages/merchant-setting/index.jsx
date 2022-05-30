@@ -4,6 +4,7 @@ import InputField from '../../component/input-field';
 import SideBar from '../../component/sidebar';
 import Sheild from '../../assets/ac-sheild.svg'
 import './index.scss';
+import BillDetail from './billing-detail';
 
 const MerchantSettingPage = () => {
   return (
@@ -12,13 +13,12 @@ const MerchantSettingPage = () => {
       <div className='content p-4'>
         <ContentHeader heading="Settings" subheading="Dashbaord" />
         <div className='inner-content'>
-
-          <Row>
+          <Row className='mt-3'>
             <Col lg={6}>
               <h2 className='heading'>General</h2>
               <Row>
                 <Col lg={12}>
-                  <div className='widget-field d-flex align-items-center justify-content-between mb-2'>
+                  <div className='widget-field d-flex align-items-center justify-content-between mb-2 mt-2'>
                     <Form.Label htmlFor="exampleColorInput">Insurance Widget always ON Check out</Form.Label>
                     <Form>
                       <Form.Check
@@ -27,7 +27,7 @@ const MerchantSettingPage = () => {
                       />
                     </Form>
                   </div>
-                  <div className='widget-field d-flex align-items-center justify-content-between mb-2'>
+                  <div className='widget-field d-flex align-items-center justify-content-between mb-2 mt-3'>
                     <Form.Label htmlFor="exampleColorInput">Notification Alert</Form.Label>
                     <Form>
                       <Form.Check
@@ -38,6 +38,9 @@ const MerchantSettingPage = () => {
                   </div>
                 </Col>
               </Row>
+
+              <h2 className='heading'>Billing</h2>
+              <BillDetail />
             </Col>
             <Col lg={6}>
               <h2 className='heading'>Widget</h2>

@@ -1,0 +1,50 @@
+.bill-details {
+  background: #F4E2940A;
+  border: 1px solid #E2C7507A;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 454px;
+  @media only screen and (max-width: 991px) {
+    max-width: 100%;
+    padding: 15px;
+  }
+  h2 {
+    font-size: 14px;
+    border-bottom: 1px solid #00000021;
+    font-weight: 600;
+    padding: 12px 0;
+  }
+  .edit-field {
+    position: relative;
+    label {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    input {
+      border: 1px solid #F4E294 !important;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 600;
+      min-height: 50px;
+      box-shadow: none !important;
+      padding-right: 35px;
+      &:focus {
+        background-color: #F4E294;
+      }
+    }
+    .edit-action {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
+    &.active {
+      input {
+        background-color: #F4E294;
+      }
+    }
+  }
+  .btn-secondary {
+    background-color: #F4E2942E !important;
+    border-color: #F4E2942E !important;
+  }
+}
