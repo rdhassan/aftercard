@@ -11,12 +11,6 @@ import Transition from '../../assets/transition.svg';
 import './index.scss';
 import { Link } from 'react-router-dom';
 const SideBar = () => {
-  
-  const logoutHandler = () => {
-    // LOGOUT FUNCTION
-    console.log("Logout function called");
-  }
-
   return (
     <>
       <label className='toggle-sidebar d-flex m-0'>
