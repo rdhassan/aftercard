@@ -9,12 +9,12 @@ import Team from '../../assets/team.svg';
 import FileBlack from '../../assets/file-black.svg';
 import Transition from '../../assets/transition.svg';
 import './index.scss';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 const SideBar = () => {
-  
-  const logoutHandler = () => {
-    // LOGOUT FUNCTION
-    console.log("Logout function called");
+  const navigate = useNavigate();
+  const goto = (route) => {
+    navigate(route, { replace: true })
   }
 
   return (
@@ -28,33 +28,33 @@ const SideBar = () => {
             </Navbar.Brand>
 
             <ListGroup className='menu'>
-              <ListGroup.Item action href="#link1">
-                <img src={home} alt="no-logo" /> Dashboard
+              <ListGroup.Item action onClick={() => goto("/")} as="a">
+                  <img src={home} alt="no-logo" /> Dashboard
               </ListGroup.Item>
-              <ListGroup.Item action href="#link2">
-                <img src={list} alt="no-logo" /> Claims
+              <ListGroup.Item action onClick={() => goto("/merchantdashboard")} as="a">
+                  <img src={list} alt="no-logo" /> Claims
               </ListGroup.Item>
-              <ListGroup.Item action href="#link2">
+              <ListGroup.Item action  onClick={() => goto("/merchant-detail")} as="a">
                 <img src={FileBlack} alt="no-logo" /> Merchants
               </ListGroup.Item>
-              <ListGroup.Item action href="#link2">
+              <ListGroup.Item action onClick={() => goto("/team")} as="a">
                 <img src={Team} alt="no-logo" /> Team
               </ListGroup.Item>
-              <ListGroup.Item action href="#link2">
+              <ListGroup.Item action onClick={() => goto("/")} as="a">
                 <img src={Transition} alt="no-logo" /> Transactions
               </ListGroup.Item>
-              <ListGroup.Item action href="#link3">
+              <ListGroup.Item action  onClick={() => goto("/setting")} as="a">
                 <img src={setting} alt="no-logo" /> Settings
               </ListGroup.Item>
             </ListGroup>
           </div>
           <div className='bottom'>
-            <ListGroup className='menu'>
+            <ListGroup className='menu'>      
               <div className='support mb-3'>
                 <img src={comment2x} alt="no-logo" />
                 <a href='#' className='sup-link text-decoration-none text-center'>Support</a>
               </div>
-              <ListGroup.Item onClick={logoutHandler} action href="#a">
+              <ListGroup.Item onClick={() => goto("/login")} as="a">
                 <img src={logout} alt="no-logo" /> Log-Out
               </ListGroup.Item>
             </ListGroup>

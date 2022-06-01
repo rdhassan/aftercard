@@ -26,10 +26,14 @@ export const options = {
   plugins: {
     legend: {
       position: 'top',
-    },
-    title: {
-      display: true,
-      text: 'Chart.js Line Chart',
+      display: false
+    }
+  },
+  scales: {
+    y: {
+      grid: {
+        display: false,
+      },
     },
   },
 };
@@ -43,10 +47,13 @@ export const data = {
       data: labels.map(()=>Math.random()),
       borderColor: 'grey',
       backgroundColor: 'grey',
+      borderWidth: 1,
+      fill: false,
+      pointRadius: 0,
     }
   ],
 };
 
 export function LineChart() {
-  return <Line options={options} data={data} />;
+  return <Line height={180} options={options} data={data} />;
 }
