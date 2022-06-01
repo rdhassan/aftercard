@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Admin from "./admin";
 import Dashboard from "./homepage/dashboard";
 import Login from "./login/login";
+import MainMerchantDashboard from "./merchant-dashboard";
 import MerchantDetail from "./merchant-detail";
 import MerchantSettingPage from "./merchant-setting";
 import MerchantDashboard from "./merchant/dashboard";
@@ -22,6 +23,7 @@ const Pages = () => {
         <Route path='/admin' element={<Admin />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/merchant-setting' element={<MerchantSettingPage />} />
+        <Route path='/merchant-dashboard' element={<MainMerchantDashboard />} />
       </Routes>
     </BrowserRouter>
   )

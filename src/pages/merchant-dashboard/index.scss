@@ -1,0 +1,45 @@
+.merchant-dash2 {
+  .orderProject {
+    background: url('../../assets/detail-bg.png') no-repeat;
+    background-size: 650px;
+    background-position: top right;
+    background-color: #fefcf3;
+    text-align: right;
+    padding: 20px;
+    min-height: 96px;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 260px;
+    margin-top: 20px;
+    &::after {
+      content: '';
+      height: 4px;
+      background-color: #F7EEAC;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 4px;
+    }
+    p {
+      font-size: 12px;
+     
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 10px 0 0 0;
+    }
+  }
+  .post-day-dropdown {
+    .dropdown-toggle {
+      border-color: #707070 !important;
+      color: #707070 !important;
+      opacity: 0.8;
+      min-width: 100px !important;
+    }
+  }
+}
