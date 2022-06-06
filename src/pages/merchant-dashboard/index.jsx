@@ -5,6 +5,7 @@ import './index.scss';
 import ArrowUpRight from '../../assets/Arrow-up-right.png'
 import RedArrowUpRight from "../../assets/red-arrow-up-right.png"
 import { LineChart } from './lineChart';
+import CustomDataTable from '../../component/data-table';
 
 const MainMerchantDashboard = () => {
 
@@ -49,9 +50,20 @@ const MainMerchantDashboard = () => {
                   </DropdownButton>
                 </div>
               </h2>
-              <LineChart/>
+              <div className='lineChart'><LineChart /></div>
             </Col>
           </Row>
+
+          <Row>
+            <Col lg={10}>
+              <h2 className='d-flex align-items-center justify-content-between heading mb-0'>Recent Claims</h2>
+              <CustomDataTable />
+            </Col>
+            <Col lg={2}>
+              <h2 className='d-flex align-items-center justify-content-between heading border-0'>Analytics</h2>
+            </Col>
+          </Row>
+
         </div>
       </div>
     </div>

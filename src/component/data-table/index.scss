@@ -1,0 +1,33 @@
+.AftercardCustomTable {
+  .detail {
+    color: #000;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    width: 80px;
+    &::after {
+      content: '';
+      height: 7px;
+      width: 7px;
+      background: url(../../assets/detail-table-icon.png) no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+  .rdt_TableHeadRow {
+    color: #7E7E7E;
+    font-size: 14px;
+    span {
+      background: url(../../assets/sort.svg) no-repeat;
+      background-position: center;
+      text-indent: -9999px;
+      opacity: 1;
+      margin-left: 10px;
+    }
+  }
+  .rdt_TableBody * {
+    font-size: 14px;
+  }
+ 
+}

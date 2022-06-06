@@ -42,4 +42,10 @@
       min-width: 100px !important;
     }
   }
+  .lineChart {
+    canvas {
+      width: 100% !important;
+      display: none !important;
+    }
+  }
 }
