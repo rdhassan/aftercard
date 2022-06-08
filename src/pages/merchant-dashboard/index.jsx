@@ -6,6 +6,10 @@ import ArrowUpRight from '../../assets/Arrow-up-right.png'
 import RedArrowUpRight from "../../assets/red-arrow-up-right.png"
 import { LineChart } from './lineChart';
 import CustomDataTable from '../../component/data-table';
+import ClaimCard from '../../component/claim-card';
+import TclaimIcon from '../../assets/t-claim-icon.svg';
+import CclaimIcon from '../../assets/c-claim-icon.svg';
+import File from '../../assets/file.svg';
 
 const MainMerchantDashboard = () => {
 
@@ -16,7 +20,7 @@ const MainMerchantDashboard = () => {
         <ContentHeader heading="Welcome User," subheading="Dashbaord" />
         <div className='inner-content'>
           <Row>
-            <Col lg={4}>
+            <Col lg={4} className='d-flex'>
               <div className='orderProject'>
                 <div className='d-flex align-items-center justify-content-between w-100'>
                   <img src={ArrowUpRight} />
@@ -27,7 +31,7 @@ const MainMerchantDashboard = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={4}>
+            <Col lg={4} className='d-flex'>
               <div className='orderProject'>
                 <div className='d-flex align-items-center justify-content-between w-100'>
                   <img src={RedArrowUpRight} />
@@ -55,12 +59,15 @@ const MainMerchantDashboard = () => {
           </Row>
 
           <Row>
-            <Col lg={10}>
+            <Col lg={10} md={9}>
               <h2 className='d-flex align-items-center justify-content-between heading mb-0'>Recent Claims</h2>
               <CustomDataTable />
             </Col>
-            <Col lg={2}>
+            <Col lg={2} md={3} className='analytics-blk ps-0'>
               <h2 className='d-flex align-items-center justify-content-between heading border-0'>Analytics</h2>
+              <ClaimCard title="Total Claims" value="18" icon={CclaimIcon}/>
+              <ClaimCard title="Total Claims" value="18" icon={File}/>
+              <ClaimCard title="Total Claims" value="18" icon={TclaimIcon}/>
             </Col>
           </Row>
 

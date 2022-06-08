@@ -44,6 +44,7 @@ export const data = {
   labels,
   datasets: [
     {
+      label:"Dataset1",
       data: labels.map(()=>Math.random()),
       borderColor: 'grey',
       backgroundColor: 'grey',
@@ -55,5 +56,5 @@ export const data = {
 };
 
 export function LineChart() {
-  return <Line height={180} options={options} data={data} />;
+  return <Line data={data} options={options}/>;
 }

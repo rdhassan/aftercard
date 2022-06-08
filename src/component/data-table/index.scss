@@ -1,4 +1,5 @@
 .AftercardCustomTable {
+  max-width: calc(100vw - 50px);
   .detail {
     color: #000;
     display: block;
@@ -28,6 +29,17 @@
   }
   .rdt_TableBody * {
     font-size: 14px;
+    padding: 0 5px;
+  }
+  .rdt_TableHeadRow {
+    & > div {
+      padding: 0 10px;
+    }
+  }
+  .rdt_TableRow {
+    &:hover {
+      background-color: #FBF6DC;
+    }
   }
  
 }

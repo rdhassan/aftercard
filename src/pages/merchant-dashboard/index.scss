@@ -12,8 +12,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    min-height: 260px;
     margin-top: 20px;
+    flex: 1;
+    width: 100%;
+    min-height: 200px;
     &::after {
       content: '';
       height: 4px;
@@ -45,7 +47,18 @@
   .lineChart {
     canvas {
       width: 100% !important;
-      display: none !important;
+    }
+  }
+  .analytics-blk {
+    .claim-card {
+      padding-left: 65px;
+      h2 {
+        text-align: left;
+      }
+      p {
+        justify-content: flex-start !important;
+        text-align: left;
+      }
     }
   }
 }

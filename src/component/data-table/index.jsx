@@ -66,6 +66,66 @@ const data = [
     status: <span className="d-inline-flex bg-primary py-1 my-2 px-2 rounded">In Process</span>,
     details: <Link className="detail" to='/details'>Details</Link>
   },
+  {
+    id: Math.random(),
+    date: '04/05/2022',
+    source: 'Shopify',
+    claimtype: 'Lost',
+    request: 'Refund',
+    price: '$180',
+    status: <span className="d-inline-flex bg-primary py-1 my-2 px-2 rounded">In Process</span>,
+    details: <Link className="detail" to='/details'>Details</Link>
+  },
+  {
+    id: Math.random(),
+    date: '04/05/2022',
+    source: 'Shopify',
+    claimtype: 'Lost',
+    request: 'Refund',
+    price: '$180',
+    status: <span className="d-inline-flex bg-primary py-1 my-2 px-2 rounded">In Process</span>,
+    details: <Link className="detail" to='/details'>Details</Link>
+  },
+  {
+    id: Math.random(),
+    date: '04/05/2022',
+    source: 'Shopify',
+    claimtype: 'Lost',
+    request: 'Refund',
+    price: '$180',
+    status: <span className="d-inline-flex bg-primary py-1 my-2 px-2 rounded">In Process</span>,
+    details: <Link className="detail" to='/details'>Details</Link>
+  },
+  {
+    id: Math.random(),
+    date: '04/05/2022',
+    source: 'Shopify',
+    claimtype: 'Lost',
+    request: 'Refund',
+    price: '$180',
+    status: <span className="d-inline-flex bg-primary py-1 my-2 px-2 rounded">In Process</span>,
+    details: <Link className="detail" to='/details'>Details</Link>
+  },
+  {
+    id: Math.random(),
+    date: '04/05/2022',
+    source: 'Shopify',
+    claimtype: 'Lost',
+    request: 'Refund',
+    price: '$180',
+    status: <span className="d-inline-flex bg-primary py-1 my-2 px-2 rounded">In Process</span>,
+    details: <Link className="detail" to='/details'>Details</Link>
+  },
+  {
+    id: Math.random(),
+    date: '04/05/2022',
+    source: 'Shopify',
+    claimtype: 'Lost',
+    request: 'Refund',
+    price: '$180',
+    status: <span className="d-inline-flex bg-primary py-1 my-2 px-2 rounded">In Process</span>,
+    details: <Link className="detail" to='/details'>Details</Link>
+  },
 ]
 const customStyles = {
   rows: {
@@ -89,7 +149,7 @@ const customStyles = {
 const CustomDataTable = () => {
   return (
     <div className="AftercardCustomTable">
-      <DataTable columns={columns} data={data} pagination responsive customStyles={customStyles} fixedHeader fixedHeaderScrollHeight="400px"/>
+      <DataTable columns={columns} data={data} pagination responsive fixedHeader fixedHeaderScrollHeight="400px"/>
     </div>
   )
 }
