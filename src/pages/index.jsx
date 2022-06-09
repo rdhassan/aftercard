@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Admin from "./admin";
+import AdminClaimDashboard from "./admin-claim";
 import Dashboard from "./homepage/dashboard";
 import Login from "./login/login";
 import MainMerchantDashboard from "./merchant-dashboard";
@@ -24,6 +25,7 @@ const Pages = () => {
         <Route path='/signup' element={<SignUp />} />
         <Route path='/merchant-setting' element={<MerchantSettingPage />} />
         <Route path='/merchant-dashboard' element={<MainMerchantDashboard />} />
+        <Route path='/admin-claim' element={<AdminClaimDashboard />} />
       </Routes>
     </BrowserRouter>
   )

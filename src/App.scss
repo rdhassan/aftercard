@@ -7,7 +7,7 @@ $theme-colors: (
   "red": #dc3545,
   "orange": #fd7e14,
   "yellow": #ffc107,
-  "green": #28a745,
+  "green": #79CF8B,
   "teal": #20c997,
   "cyan": #17a2b8,
   "white": #fff,
@@ -22,7 +22,8 @@ $theme-colors: (
   "dark": #343a40,
   "black": #000000,
   "assign": #CCCCCC,
-  "approve": #575757
+  "approve": #575757,
+  "light-red": #FF9595,
  );
 
 @function theme-color($key: "primary") {

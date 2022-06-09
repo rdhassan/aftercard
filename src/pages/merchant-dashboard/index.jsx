@@ -61,7 +61,7 @@ const MainMerchantDashboard = () => {
           <Row>
             <Col lg={10} md={9}>
               <h2 className='d-flex align-items-center justify-content-between heading mb-0'>Recent Claims</h2>
-              <CustomDataTable />
+              <CustomDataTable height="400px" />
             </Col>
             <Col lg={2} md={3} className='analytics-blk ps-0'>
               <h2 className='d-flex align-items-center justify-content-between heading border-0'>Analytics</h2>

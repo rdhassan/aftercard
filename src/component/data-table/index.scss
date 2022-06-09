@@ -1,5 +1,25 @@
 .AftercardCustomTable {
   max-width: calc(100vw - 3.125rem);
+  .nauIv {
+    /* width */
+    &::-webkit-scrollbar {
+      width: 0.3125rem;
+      height: 0.3125rem;
+      border-radius: 0.625rem;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #F6F6F6; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #F8EDAF;
+      border-radius: 0.625rem;
+    }
+  }
+
   .detail {
     color: #000;
     display: block;

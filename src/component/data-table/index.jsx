@@ -146,10 +146,10 @@ const customStyles = {
       },
   },
 };
-const CustomDataTable = () => {
+const CustomDataTable = ({height}) => {
   return (
     <div className="AftercardCustomTable">
-      <DataTable columns={columns} data={data} pagination responsive fixedHeader fixedHeaderScrollHeight="400px"/>
+      <DataTable columns={columns} data={data} pagination responsive fixedHeader fixedHeaderScrollHeight={height}/>
     </div>
   )
 }
