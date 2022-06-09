@@ -1,39 +1,39 @@
 .AftercardCustomTable {
-  max-width: calc(100vw - 50px);
+  max-width: calc(100vw - 3.125rem);
   .detail {
     color: #000;
     display: block;
     text-align: right;
     text-decoration: none;
-    width: 80px;
+    width: 5rem;
     &::after {
       content: '';
-      height: 7px;
-      width: 7px;
+      height: 0.4375rem;
+      width: 0.4375rem;
       background: url(../../assets/detail-table-icon.png) no-repeat;
       background-size: 100%;
       display: inline-block;
-      margin-left: 5px;
+      margin-left: 0.3125rem;
     }
   }
   .rdt_TableHeadRow {
     color: #7E7E7E;
-    font-size: 14px;
+    font-size: 0.875rem;
     span {
       background: url(../../assets/sort.svg) no-repeat;
       background-position: center;
-      text-indent: -9999px;
+      text-indent: -624.9375rem;
       opacity: 1;
-      margin-left: 10px;
+      margin-left: 0.625rem;
     }
   }
   .rdt_TableBody * {
-    font-size: 14px;
-    padding: 0 5px;
+    font-size: 0.875rem;
+    padding: 0 0.3125rem;
   }
   .rdt_TableHeadRow {
     & > div {
-      padding: 0 10px;
+      padding: 0 0.625rem;
     }
   }
   .rdt_TableRow {

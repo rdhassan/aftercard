@@ -7,24 +7,24 @@
 .select-dropdown {
   .btn {
     background: #FDFBF0 !important;
-    border-radius: 5px;
-    height: 50px;
+    border-radius: 0.3125rem;
+    height: 3.125rem;
     border-color: transparent !important;
     color: #575757;
-    margin-bottom: 16px;
-    font-size: 14px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     box-shadow: none !important;
     position: relative;
     z-index: 1100 !important;
     
     &::after {
       color: #F4E294;
-      font-size: 20px;
+      font-size: 1.25rem;
       transition: .2s linear;
     }
     &:hover {
@@ -42,9 +42,9 @@
     border-color: transparent;
     width: 100%;
     inset: auto !important;
-    top: 42px !important;
-    border-radius: 0 0 5px 5px;
-    min-width: 100px;
+    top: 2.625rem !important;
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    min-width: 6.25rem;
     padding-bottom: 0;
     animation: growDown 0.5s ease-in-out forwards;
     transform-origin: top center;
@@ -61,10 +61,10 @@
     }
     a {
       color: #363636;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 0.0625rem solid #ccc;
       background-color: transparent !important;
-      padding: 10px 20px;
-      font-size: 14px;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.875rem;
       white-space: normal;
       &:last-child {
         border-bottom: 0;

@@ -6,31 +6,33 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    @media only screen and (min-width: 1400px) {
-      padding: 33px 50px !important;
+    @media only screen and (min-width: 87.5rem) {
+      padding: 2.0625rem 3.125rem !important;
     }
     .inner-content {
       flex: 1;
       .welcomeBlk {
-        box-shadow: 10px 10px 30px #0000000D;
-        border-radius: 5px;
+        box-shadow: 0.625rem 0.625rem 1.875rem #0000000D;
+        border-radius: 0.3125rem;
         width: 100%;
-        max-width: 696px;
+        max-width: 43.5rem;
         text-align: center;
         h2 {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 600;
-          letter-spacing: -1px;
+          letter-spacing: -0.0625rem;
         }
         .letsget {
-          border: 1px solid #F4E294;
-          border-radius: 5px;
-          padding: 20px;
-          max-width: 365px;
-          margin: 30px auto;
-          min-height: 200px;
+          border: 0.0625rem solid #F4E294;
+          border-radius: 0.3125rem;
+          padding: 1.25rem;
+          max-width: 22.8125rem;
+          margin: 1.875rem auto;
+          min-height: 12.5rem;
           .rotate {
             animation: rotation 6s infinite linear;
+            height: 2.8rem;
+            width: 2.8rem;
           }
           
           @keyframes rotation {
@@ -43,9 +45,9 @@
           }
           p {
             color: #575757;
-            font-size: 15px;
+            font-size: 0.9375rem;
             strong {
-              font-size: 20px;
+              font-size: 1.25rem;
             }
           }
         }

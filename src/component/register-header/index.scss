@@ -7,14 +7,14 @@
   .menu {
     position: absolute;
     right: 0;
-    @media only screen and (max-width : 992px) {
+    @media only screen and (max-width : 62rem) {
       position: static;
       right: inherit;
     }
     .contactus {
       background-color: theme-color("black");
       color: #fff !important;
-      border-radius: 10px 0 10px 0;
+      border-radius: 0.625rem 0 0.625rem 0;
     }
   }
 

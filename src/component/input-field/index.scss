@@ -12,14 +12,14 @@ input[type=number] {
 .login-card {
   label {
     color: #575757;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
   }
   .form-control {
     // background-color: #F5F5F5;
-    border-radius: 5px;
-    font-size: 14px;
-    min-height: 50px;
+    border-radius: 0.3125rem;
+    font-size: 0.875rem;
+    min-height: 3.125rem;
     border-color: transparent;
     transition: .2s linear;
     &:focus {

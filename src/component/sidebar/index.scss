@@ -1,12 +1,18 @@
 @import "../../App.scss";
 
 .toggle-sidebar {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   input {
     display: none;
   }
   .sidebar {
     background-color: theme-color("primary");
-    width: 300px;
+    width: 18.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,60 +22,64 @@
     &::-webkit-scrollbar {
       width: 0;
     }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 64rem) {
       position: fixed;
-      left: -300px;
+      left: -18.75rem;
       z-index: 5555;
       top: 0;
       bottom: 0;
       overflow-y: auto;
     }
     .menu {
-      margin-top: 30px;
+      margin-top: 1.875rem;
       align-items: center;
       .support {
         background-color: #ffffffbd;
-        box-shadow: 3px 3px 10px #E2C750B2;
-        min-width: 236px;
-        min-height: 226px;
+        box-shadow: 0.1875rem 0.1875rem 0.625rem #E2C750B2;
+        min-width: 14.75rem;
+        min-height: 14.125rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .sup-link {
           background: #FFFFFF;
-          border-radius: 5px;
+          border-radius: 0.3125rem;
           color: #000;
-          font-size: 14px;
+          font-size: 0.875rem;
           font-weight: 500;
-          margin-top: 20px;
+          margin-top: 1.25rem !important;
           justify-content: center;
-          max-width: 130px;
+          max-width: 8.125rem;
           padding-left: 0;
+        }
+        img {
+          width: 8.125rem;
+          height: 5.625rem;
         }
       }
       a {
         background-color: transparent;
         border: 0 !important;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 500;
         display: inline-flex;
         align-items: center;
-        margin: 6px 0 !important;
-        padding: 8px 0;
+        margin: 0.375rem 0 !important;
+        padding: 0.5rem 0;
         width: 100%;
-        padding-left: 50px;
-        border-radius: 5px;
+        padding-left: 3.125rem;
+        border-radius: 0.3125rem;
         transition: .2s linear;
         &.active,
         &:hover {
-          box-shadow: 3px 3px 5px #E2C750B3;
+          box-shadow: 0.1875rem 0.1875rem 0.3125rem #E2C750B3;
           background-color: #fff;
           color: #000;
         }
         img {
-          margin-right: 10px;
-          width: 16px;
+          margin-right: 0.625rem;
+          width: 1rem;
           object-fit: contain;
         }
       }
@@ -80,18 +90,18 @@
           text-align: center;
           justify-content: center;
           padding-left: 0;
-          max-width: 206px;
+          max-width: 12.875rem;
         }
       }
     }
   }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 64rem) {
     &::after {
       content: "⇄";
       cursor: pointer;
-      padding: 0 5px;
-      font-size: 16px;
-      border-radius: 0 5px 5px 0;
+      padding: 0 0.3125rem;
+      font-size: 1rem;
+      border-radius: 0 0.3125rem 0.3125rem 0;
       background-color: #F4E294;
       position: relative;
       z-index: 555555;
@@ -99,7 +109,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 24px;
+      min-width: 1.5rem;
     }
     input:checked ~ .sidebar {
       left: 0;

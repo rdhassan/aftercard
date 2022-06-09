@@ -3,18 +3,18 @@
 .content-header {
   .content-heading {
     h3 {
-      font-size: 15px;
+      font-size: 0.9375rem;
     }
 
     h2 {
-      letter-spacing: -1px;
-      font-size: 24px;
+      letter-spacing: -0.0625rem;
+      font-size: 1.5rem;
       font-weight: 600;
     }
   }
 
   .content-notification {
-    @media only screen and (max-width: 520px) {
+    @media only screen and (max-width: 32.5rem) {
       width: 100%;
       form.d-flex {
         flex: 1;
@@ -22,7 +22,7 @@
     }
     .dropdown-toggle {
       img {
-        min-width: 20px;
+        min-width: 1.25rem;
       }
 
       &::after {
@@ -31,22 +31,22 @@
     }
 
     .action-link {
-      @media only screen and (max-width: 520px) {
+      @media only screen and (max-width: 32.5rem) {
         position: static;
       }
       .dropdown-menu {
         background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 10px 10px 30px #00000026;
-        border-radius: 5px;
+        box-shadow: 0.625rem 0.625rem 1.875rem #00000026;
+        border-radius: 0.3125rem;
         border: 0;
-        min-width: 420px;
-        margin-top: 10px;
+        min-width: 26.25rem;
+        margin-top: 0.625rem;
         padding: 0;
         animation: growDown 0.5s ease-in-out forwards;
         transform-origin: top center;
         z-index: 9999;
-        @media only screen and (max-width: 520px) {
-          min-width: 260px;
+        @media only screen and (max-width: 32.5rem) {
+          min-width: 16.25rem;
           width: 100%;
         }
         @keyframes growDown {
@@ -63,12 +63,12 @@
           }
         }
         .inner-head {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 600;
           display: flex;
           align-items: center;
-          padding: 15px 25px;
-          border-bottom: 1px solid #CCCCCC;
+          padding: 0.9375rem 1.5625rem;
+          border-bottom: 0.0625rem solid #CCCCCC;
 
           span {
             display: flex;
@@ -76,20 +76,20 @@
 
             small {
               color: #575757;
-              font-size: 14px;
+              font-size: 0.875rem;
               font-weight: 400;
             }
           }
         }
         .inner-body {
-          max-height: 380px;
+          max-height: 23.75rem;
           overflow-y: auto;
 
           /* width */
           &::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-            border-radius: 10px;
+            width: 0.3125rem;
+            height: 0.3125rem;
+            border-radius: 0.625rem;
           }
 
           /* Track */
@@ -100,22 +100,22 @@
           /* Handle */
           &::-webkit-scrollbar-thumb {
             background: #F8EDAF;
-            border-radius: 10px;
+            border-radius: 0.625rem;
           }
 
           a {
-            border-bottom: 1px solid #CCCCCC;
-            border-left: 5px solid #CCCCCC;
-            padding: 10px 20px;
+            border-bottom: 0.0625rem solid #CCCCCC;
+            border-left: 0.3125rem solid #CCCCCC;
+            padding: 0.625rem 1.25rem;
             white-space: normal;
 
             p {
               color: #575757;
-              font-size: 14px;
-              line-height: 19px;
+              font-size: 0.875rem;
+              line-height: 1.1875rem;
               small {
                 color: #57575775;
-                font-size: 10px;
+                font-size: 0.625rem;
               }
             }
 
@@ -131,8 +131,8 @@
           a {
             border: 0;
             color: #575757;
-            font-size: 12px;
-            padding: 20px;
+            font-size: 0.75rem;
+            padding: 1.25rem;
             text-align: center;
             background-color: transparent !important;
             &:hover {

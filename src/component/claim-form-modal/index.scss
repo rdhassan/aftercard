@@ -1,52 +1,52 @@
 .aftercard-modal.claim-form {
-  padding: 0 10px !important;
-  @media only screen and (max-width : 575px) {
+  padding: 0 0.625rem !important;
+  @media only screen and (max-width : 35.9375rem) {
     padding: 0 !important;
   }
   .backbtn {
     position: absolute;
     left: 0;
-    top: 11px;
-    @media only screen and (max-width : 768px) {
+    top: 0.6875rem;
+    @media only screen and (max-width : 48rem) {
       position: static;
     }
   }
   .modal-lg {
-    max-width: 1170px;
+    max-width: 73.125rem;
   }
   .modal-dialog {
     .modal-content {
-      padding: 30px 50px !important;
-      box-shadow: 10px 10px 30px #0000000F;
-      border-radius: 5px;
+      padding: 1.875rem 3.125rem !important;
+      box-shadow: 0.625rem 0.625rem 1.875rem #0000000F;
+      border-radius: 0.3125rem;
       border: 0;
-      @media only screen and (max-width : 600px) {
-        padding: 10px 20px !important;
+      @media only screen and (max-width : 37.5rem) {
+        padding: 0.625rem 1.25rem !important;
       }
       h2,
       .modal-title {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700;
         width: 100%;
         margin: 0;
-        padding: 15px 0;
-        border-bottom: 1px solid #F4E294;
+        padding: 0.9375rem 0;
+        border-bottom: 0.0625rem solid #F4E294;
       }
       h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
         small {
-          font-size: 12px;
-          line-height: 11px;
+          font-size: 0.75rem;
+          line-height: 0.6875rem;
           font-weight: 400;
           color: #575757;
         }
         .upload-btn {
           position: relative;
           overflow: hidden;
-          height: 30px;
-          padding: 5px !important;
-          line-height: 14px;
-          font-size: 14px;
+          height: 1.875rem;
+          padding: 0.3125rem !important;
+          line-height: 0.875rem;
+          font-size: 0.875rem;
           input {
             position: absolute;
             right: 0;
@@ -59,13 +59,13 @@
       }
       label {
         color: #575757;
-        font-size: 14px;
-        margin-bottom: 10px;
+        font-size: 0.875rem;
+        margin-bottom: 0.625rem;
       }
       .form-control {
-        border-radius: 5px;
-        font-size: 14px;
-        min-height: 50px;
+        border-radius: 0.3125rem;
+        font-size: 0.875rem;
+        min-height: 3.125rem;
         border-color: transparent;
         transition: .2s linear;
         border-color: transparent !important;
@@ -82,16 +82,16 @@
         display: flex;
         flex-wrap: wrap;
         li {
-          min-width: 150px;
-          margin: 20px 0;
+          min-width: 9.375rem;
+          margin: 1.25rem 0;
           .mute-text {
             color: #E5E5E5;
-            font-size: 12px;
+            font-size: 0.75rem;
             font-weight: 300;
           }
           p {
             color: #575757;
-            font-size: 14px;
+            font-size: 0.875rem;
           }
         }
       }
@@ -99,25 +99,25 @@
         position: relative;
         select {
           background: #FDFBF0;
-          border-radius: 5px;
-          height: 50px;
+          border-radius: 0.3125rem;
+          height: 3.125rem;
           border: 0;
           color: #575757;
-          margin-bottom: 16px;
-          font-size: 14px;
+          margin-bottom: 1rem;
+          font-size: 0.875rem;
         }
         &:after {
           content: "";
           display: inline-block;
-          border-left: 6px solid transparent;
-          border-right: 6px solid transparent;
-          border-top: 6px solid #F4E294;
+          border-left: 0.375rem solid transparent;
+          border-right: 0.375rem solid transparent;
+          border-top: 0.375rem solid #F4E294;
           position: absolute;
-          right: 20px;
+          right: 1.25rem;
           top: 0;
           bottom: 0;
           margin: auto;
-          height: 6px;
+          height: 0.375rem;
           pointer-events: none;
         }
       }
@@ -129,9 +129,9 @@
         overflow-x: auto;
         /* width */
         &::-webkit-scrollbar {
-          width: 5px;
-          height: 5px;
-          border-radius: 10px;
+          width: 0.3125rem;
+          height: 0.3125rem;
+          border-radius: 0.625rem;
         }
 
         /* Track */
@@ -142,35 +142,35 @@
         /* Handle */
         &::-webkit-scrollbar-thumb {
           background: #F8EDAF;
-          border-radius: 10px;
+          border-radius: 0.625rem;
         }
 
  
         li {
           position: relative;
-          margin-right: 10px;
+          margin-right: 0.625rem;
           .btn-close {
-            height: 14px !important;
-            width: 14px !important;
-            border: 1px solid #000;
+            height: 0.875rem !important;
+            width: 0.875rem !important;
+            border: 0.0625rem solid #000;
             border-radius: 50%;
-            font-size: 10px !important;
+            font-size: 0.625rem !important;
             background-size: 50%;
             padding: 0;
-            top: 10px;
-            left: 10px;
+            top: 0.625rem;
+            left: 0.625rem;
           }
           p {
             color: #575757;
-            font-size: 10px;
-            margin-top: 6px;
+            font-size: 0.625rem;
+            margin-top: 0.375rem;
           }
           img {
             background: #FDFBF0;
-            border-radius: 5px;
-            height: 96px;
-            max-width: 96px;
-            min-width: 96px;
+            border-radius: 0.3125rem;
+            height: 6rem;
+            max-width: 6rem;
+            min-width: 6rem;
             display: block;
           }
         }
@@ -178,13 +178,13 @@
       }
       .claim-items {
         list-style: none;
-        height: 250px;
+        height: 15.625rem;
         overflow-y: auto;
         /* width */
         &::-webkit-scrollbar {
-          width: 5px;
-          height: 5px;
-          border-radius: 10px;
+          width: 0.3125rem;
+          height: 0.3125rem;
+          border-radius: 0.625rem;
         }
       
         /* Track */
@@ -195,25 +195,25 @@
         /* Handle */
         &::-webkit-scrollbar-thumb {
           background: #F8EDAF;
-          border-radius: 10px;
+          border-radius: 0.625rem;
         }
         li {
           display: flex;
           .item-image {
             img {
-              height: 48px;
-              width: 48px;
-              min-width: 48px;
+              height: 3rem;
+              width: 3rem;
+              min-width: 3rem;
               object-fit: cover;
             }
           }
           .item-detail {
             p {
               color: #575757;
-              font-size: 14px;
-              line-height: 16px;
+              font-size: 0.875rem;
+              line-height: 1rem;
               small {
-                font-size: 10px;
+                font-size: 0.625rem;
               }
             }
             .price-text {

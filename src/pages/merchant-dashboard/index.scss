@@ -1,39 +1,39 @@
 .merchant-dash2 {
   .orderProject {
     background: url('../../assets/detail-bg.png') no-repeat;
-    background-size: 650px;
+    background-size: 40.625rem;
     background-position: top right;
     background-color: #fefcf3;
     text-align: right;
-    padding: 20px;
-    min-height: 96px;
-    margin-bottom: 15px;
+    padding: 1.25rem;
+    min-height: 6rem;
+    margin-bottom: 0.9375rem;
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     flex: 1;
     width: 100%;
-    min-height: 200px;
+    min-height: 12.5rem;
     &::after {
       content: '';
-      height: 4px;
+      height: 0.25rem;
       background-color: #F7EEAC;
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      border-radius: 4px;
+      border-radius: 0.25rem;
     }
     p {
-      font-size: 12px;
+      font-size: 0.75rem;
      
     }
     h2 {
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: 600;
-      margin: 10px 0 0 0;
+      margin: 0.625rem 0 0 0;
     }
   }
   .post-day-dropdown {
@@ -41,7 +41,7 @@
       border-color: #707070 !important;
       color: #707070 !important;
       opacity: 0.8;
-      min-width: 100px !important;
+      min-width: 6.25rem !important;
     }
   }
   .lineChart {
@@ -51,7 +51,7 @@
   }
   .analytics-blk {
     .claim-card {
-      padding-left: 65px;
+      padding-left: 4.0625rem;
       h2 {
         text-align: left;
       }

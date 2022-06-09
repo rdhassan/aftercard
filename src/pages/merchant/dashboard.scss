@@ -1,28 +1,28 @@
 .merchant {
   .mb-10 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   .heading {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-    padding: 14px 0;
-    margin-bottom: 14px;
-    border-bottom: 1px solid #F4E294;
+    padding: 0.875rem 0;
+    margin-bottom: 0.875rem;
+    border-bottom: 0.0625rem solid #F4E294;
   }
 
   label {
-    margin-bottom: 8px;
-    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
   }
 
   .form-control {
     border-color: transparent;
     background-color: #fbf6dc6b;
-    height: 40px;
+    height: 2.5rem;
     font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
 
     &:focus {
       box-shadow: none;
