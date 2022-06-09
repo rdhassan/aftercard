@@ -1,6 +1,6 @@
 .AftercardCustomTable {
   max-width: calc(100vw - 3.125rem);
-  .nauIv {
+  & > div {
     /* width */
     &::-webkit-scrollbar {
       width: 0.3125rem;
