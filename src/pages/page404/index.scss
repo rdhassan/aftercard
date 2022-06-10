@@ -1,0 +1,75 @@
+#notfound {
+  background: url('../../assets/ac-Background.svg') no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 35rem;
+    width: 100%;
+    padding-left: 10rem;
+    line-height: 1.1;
+    @media screen and (max-width: 480px) {
+      padding: 10rem 2rem;
+    }
+    .notfound-404 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      width: 8.75rem;
+      height: 8.75rem;
+      background-image: url(../../assets/emoji.png);
+      background-size: cover;
+      @media screen and (max-width: 480px) {
+        left: 20px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: scale(2.4);
+        -ms-transform: scale(2.4);
+        transform: scale(2.4);
+        border-radius: 50%;
+        background-color: #f4e29447;
+        z-index: -1;
+      }
+    }
+    h1 {
+      font-size: 4.0625rem;
+      font-weight: 700;
+      margin-top: 0rem;
+      margin-bottom: 0.625rem;
+      color: #000;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 1.3125rem;
+      font-weight: 500;
+      margin: 0;
+      text-transform: uppercase;
+      color: #000;
+    }
+    p {
+      color: #999fa5;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      margin-top: 0.625rem;
+    }
+    a {
+      display: inline-block;
+      font-weight: 400;
+      border-radius: 2.5rem;
+      text-decoration: none;
+      color: #F4E294;
+    }
+  }
+}

@@ -7,6 +7,7 @@ import MainMerchantDashboard from "./merchant-dashboard";
 import MerchantDetail from "./merchant-detail";
 import MerchantSettingPage from "./merchant-setting";
 import MerchantDashboard from "./merchant/dashboard";
+import ErrorPage from "./page404";
 import SettingPage from "./setting";
 import SignUp from "./signup";
 import TeamPage from "./team/team";
@@ -26,6 +27,7 @@ const Pages = () => {
         <Route path='/merchant-setting' element={<MerchantSettingPage />} />
         <Route path='/merchant-dashboard' element={<MainMerchantDashboard />} />
         <Route path='/admin-claim' element={<AdminClaimDashboard />} />
+        <Route path='/page404' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   )
