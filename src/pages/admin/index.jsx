@@ -15,8 +15,6 @@ const Admin = () => {
         <ContentHeader heading="Welcome Username," subheading="Dashbaord" />
         <div className='inner-content'>
           <div className='mt-5'>
-
-
             <Row>
               <Col lg={8}>
                 <SearchField tags />
